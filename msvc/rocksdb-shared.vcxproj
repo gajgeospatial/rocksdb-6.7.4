@@ -1,0 +1,882 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|Win32">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|x64">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|Win32">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|x64">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ADC8F352-7538-3546-8863-4FE1C78E3498}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>rocksdb-shared</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">rocksdb-shared</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">rocksdb-shared</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rocksdb-shared</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">rocksdb-shared</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">rocksdb-shared</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">rocksdb-shared</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rocksdb-shared</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">rocksdb-shared</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ZLIB_DIR);..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4800;4996;4351;4100;4204;4324</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ErrorReporting>Queue</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>true</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ROCKSDB_USE_RTTI;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR="Debug";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ROCKSDB_USE_RTTI;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR=\"Debug\";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>zlib.lib;shlwapi.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)rocksdb-shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ZLIB_DIR);..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4800;4996;4351;4100;4204;4324</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ErrorReporting>Queue</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>true</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ROCKSDB_USE_RTTI;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR="Debug";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ROCKSDB_USE_RTTI;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR=\"Debug\";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>zlib.lib;shlwapi.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)rocksdb-shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ZLIB_DIR);..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4800;4996;4351;4100;4204;4324</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ErrorReporting>Queue</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ROCKSDB_USE_RTTI;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR="Debug";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ROCKSDB_USE_RTTI;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR=\"Debug\";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>zlib.lib;shlwapi.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)rocksdb-shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ZLIB_DIR);..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4800;4996;4351;4100;4204;4324</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ErrorReporting>Queue</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ROCKSDB_USE_RTTI;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR="Debug";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ROCKSDB_USE_RTTI;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR=\"Debug\";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>zlib.lib;shlwapi.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)rocksdb-shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ZLIB_DIR);..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+ /Oxt</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4800;4996;4351;4100;4204;4324</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ErrorReporting>Queue</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR="Release";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR=\"Release\";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>zlib.lib;shlwapi.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)rocksdb-shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ZLIB_DIR);..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+ /Oxt</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4800;4996;4351;4100;4204;4324</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ErrorReporting>Queue</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR="Release";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR=\"Release\";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>zlib.lib;shlwapi.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)rocksdb-shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ZLIB_DIR);..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+ /Oxt</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4800;4996;4351;4100;4204;4324</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ErrorReporting>Queue</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR="Release";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR=\"Release\";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>zlib.lib;shlwapi.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)rocksdb-shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ZLIB_DIR);..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+ /Oxt</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4800;4996;4351;4100;4204;4324</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ErrorReporting>Queue</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR="Release";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ROCKSDB_DLL;ROCKSDB_LIBRARY_EXPORTS;ZLIB;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR=\"Release\";rocksdb_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;..\;..\include;..\third-party\folly;..\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>zlib.lib;shlwapi.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)rocksdb-shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\cache\clock_cache.cc" />
+    <ClCompile Include="..\cache\lru_cache.cc" />
+    <ClCompile Include="..\cache\sharded_cache.cc" />
+    <ClCompile Include="..\db\arena_wrapped_db_iter.cc" />
+    <ClCompile Include="..\db\blob\blob_file_addition.cc" />
+    <ClCompile Include="..\db\blob\blob_file_garbage.cc" />
+    <ClCompile Include="..\db\blob\blob_file_meta.cc" />
+    <ClCompile Include="..\db\builder.cc" />
+    <ClCompile Include="..\db\c.cc" />
+    <ClCompile Include="..\db\column_family.cc" />
+    <ClCompile Include="..\db\compacted_db_impl.cc" />
+    <ClCompile Include="..\db\compaction\compaction.cc" />
+    <ClCompile Include="..\db\compaction\compaction_iterator.cc" />
+    <ClCompile Include="..\db\compaction\compaction_picker.cc" />
+    <ClCompile Include="..\db\compaction\compaction_job.cc" />
+    <ClCompile Include="..\db\compaction\compaction_picker_fifo.cc" />
+    <ClCompile Include="..\db\compaction\compaction_picker_level.cc" />
+    <ClCompile Include="..\db\compaction\compaction_picker_universal.cc" />
+    <ClCompile Include="..\db\convenience.cc" />
+    <ClCompile Include="..\db\db_filesnapshot.cc" />
+    <ClCompile Include="..\db\db_impl\db_impl.cc" />
+    <ClCompile Include="..\db\db_impl\db_impl_write.cc" />
+    <ClCompile Include="..\db\db_impl\db_impl_compaction_flush.cc" />
+    <ClCompile Include="..\db\db_impl\db_impl_files.cc" />
+    <ClCompile Include="..\db\db_impl\db_impl_open.cc" />
+    <ClCompile Include="..\db\db_impl\db_impl_debug.cc" />
+    <ClCompile Include="..\db\db_impl\db_impl_experimental.cc" />
+    <ClCompile Include="..\db\db_impl\db_impl_readonly.cc" />
+    <ClCompile Include="..\db\db_impl\db_impl_secondary.cc" />
+    <ClCompile Include="..\db\db_info_dumper.cc" />
+    <ClCompile Include="..\db\db_iter.cc" />
+    <ClCompile Include="..\db\dbformat.cc" />
+    <ClCompile Include="..\db\error_handler.cc" />
+    <ClCompile Include="..\db\event_helpers.cc" />
+    <ClCompile Include="..\db\experimental.cc" />
+    <ClCompile Include="..\db\external_sst_file_ingestion_job.cc" />
+    <ClCompile Include="..\db\file_indexer.cc" />
+    <ClCompile Include="..\db\flush_job.cc" />
+    <ClCompile Include="..\db\flush_scheduler.cc" />
+    <ClCompile Include="..\db\forward_iterator.cc" />
+    <ClCompile Include="..\db\import_column_family_job.cc" />
+    <ClCompile Include="..\db\internal_stats.cc" />
+    <ClCompile Include="..\db\logs_with_prep_tracker.cc" />
+    <ClCompile Include="..\db\log_reader.cc" />
+    <ClCompile Include="..\db\log_writer.cc" />
+    <ClCompile Include="..\db\malloc_stats.cc" />
+    <ClCompile Include="..\db\memtable.cc" />
+    <ClCompile Include="..\db\memtable_list.cc" />
+    <ClCompile Include="..\db\merge_helper.cc" />
+    <ClCompile Include="..\db\merge_operator.cc">
+      <ObjectFileName>$(IntDir)/db/merge_operator.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\db\range_del_aggregator.cc" />
+    <ClCompile Include="..\db\range_tombstone_fragmenter.cc" />
+    <ClCompile Include="..\db\repair.cc" />
+    <ClCompile Include="..\db\snapshot_impl.cc" />
+    <ClCompile Include="..\db\table_cache.cc" />
+    <ClCompile Include="..\db\table_properties_collector.cc" />
+    <ClCompile Include="..\db\transaction_log_impl.cc" />
+    <ClCompile Include="..\db\trim_history_scheduler.cc" />
+    <ClCompile Include="..\db\version_builder.cc" />
+    <ClCompile Include="..\db\version_edit.cc" />
+    <ClCompile Include="..\db\version_edit_handler.cc" />
+    <ClCompile Include="..\db\version_set.cc" />
+    <ClCompile Include="..\db\wal_manager.cc" />
+    <ClCompile Include="..\db\write_batch.cc" />
+    <ClCompile Include="..\db\write_batch_base.cc" />
+    <ClCompile Include="..\db\write_controller.cc" />
+    <ClCompile Include="..\db\write_thread.cc" />
+    <ClCompile Include="..\env\env.cc" />
+    <ClCompile Include="..\env\env_chroot.cc" />
+    <ClCompile Include="..\env\env_encryption.cc" />
+    <ClCompile Include="..\env\env_hdfs.cc" />
+    <ClCompile Include="..\env\file_system.cc" />
+    <ClCompile Include="..\env\mock_env.cc" />
+    <ClCompile Include="..\file\delete_scheduler.cc" />
+    <ClCompile Include="..\file\file_prefetch_buffer.cc" />
+    <ClCompile Include="..\file\file_util.cc" />
+    <ClCompile Include="..\file\filename.cc" />
+    <ClCompile Include="..\file\random_access_file_reader.cc" />
+    <ClCompile Include="..\file\read_write_util.cc" />
+    <ClCompile Include="..\file\readahead_raf.cc" />
+    <ClCompile Include="..\file\sequence_file_reader.cc" />
+    <ClCompile Include="..\file\sst_file_manager_impl.cc" />
+    <ClCompile Include="..\file\writable_file_writer.cc" />
+    <ClCompile Include="..\logging\auto_roll_logger.cc" />
+    <ClCompile Include="..\logging\event_logger.cc" />
+    <ClCompile Include="..\logging\log_buffer.cc" />
+    <ClCompile Include="..\memory\arena.cc" />
+    <ClCompile Include="..\memory\concurrent_arena.cc" />
+    <ClCompile Include="..\memory\jemalloc_nodump_allocator.cc" />
+    <ClCompile Include="..\memory\memkind_kmem_allocator.cc" />
+    <ClCompile Include="..\memtable\alloc_tracker.cc" />
+    <ClCompile Include="..\memtable\hash_linklist_rep.cc" />
+    <ClCompile Include="..\memtable\hash_skiplist_rep.cc" />
+    <ClCompile Include="..\memtable\skiplistrep.cc" />
+    <ClCompile Include="..\memtable\vectorrep.cc" />
+    <ClCompile Include="..\memtable\write_buffer_manager.cc" />
+    <ClCompile Include="..\monitoring\histogram.cc" />
+    <ClCompile Include="..\monitoring\histogram_windowing.cc" />
+    <ClCompile Include="..\monitoring\in_memory_stats_history.cc" />
+    <ClCompile Include="..\monitoring\instrumented_mutex.cc" />
+    <ClCompile Include="..\monitoring\iostats_context.cc" />
+    <ClCompile Include="..\monitoring\perf_context.cc" />
+    <ClCompile Include="..\monitoring\perf_level.cc" />
+    <ClCompile Include="..\monitoring\persistent_stats_history.cc" />
+    <ClCompile Include="..\monitoring\statistics.cc" />
+    <ClCompile Include="..\monitoring\thread_status_impl.cc" />
+    <ClCompile Include="..\monitoring\thread_status_updater.cc" />
+    <ClCompile Include="..\monitoring\thread_status_util.cc" />
+    <ClCompile Include="..\monitoring\thread_status_util_debug.cc" />
+    <ClCompile Include="..\options\cf_options.cc" />
+    <ClCompile Include="..\options\db_options.cc" />
+    <ClCompile Include="..\options\options.cc" />
+    <ClCompile Include="..\options\options_helper.cc" />
+    <ClCompile Include="..\options\options_parser.cc" />
+    <ClCompile Include="..\options\options_sanity_check.cc" />
+    <ClCompile Include="..\port\stack_trace.cc" />
+    <ClCompile Include="..\table\adaptive\adaptive_table_factory.cc" />
+    <ClCompile Include="..\table\block_based\binary_search_index_reader.cc" />
+    <ClCompile Include="..\table\block_based\block.cc" />
+    <ClCompile Include="..\table\block_based\block_based_filter_block.cc" />
+    <ClCompile Include="..\table\block_based\block_based_table_builder.cc" />
+    <ClCompile Include="..\table\block_based\block_based_table_factory.cc" />
+    <ClCompile Include="..\table\block_based\block_based_table_iterator.cc" />
+    <ClCompile Include="..\table\block_based\block_based_table_reader.cc" />
+    <ClCompile Include="..\table\block_based\block_builder.cc" />
+    <ClCompile Include="..\table\block_based\block_prefetcher.cc" />
+    <ClCompile Include="..\table\block_based\block_prefix_index.cc" />
+    <ClCompile Include="..\table\block_based\data_block_hash_index.cc" />
+    <ClCompile Include="..\table\block_based\data_block_footer.cc" />
+    <ClCompile Include="..\table\block_based\filter_block_reader_common.cc" />
+    <ClCompile Include="..\table\block_based\filter_policy.cc" />
+    <ClCompile Include="..\table\block_based\flush_block_policy.cc" />
+    <ClCompile Include="..\table\block_based\full_filter_block.cc" />
+    <ClCompile Include="..\table\block_based\hash_index_reader.cc" />
+    <ClCompile Include="..\table\block_based\index_builder.cc" />
+    <ClCompile Include="..\table\block_based\index_reader_common.cc" />
+    <ClCompile Include="..\table\block_based\parsed_full_filter_block.cc" />
+    <ClCompile Include="..\table\block_based\partitioned_filter_block.cc" />
+    <ClCompile Include="..\table\block_based\partitioned_index_iterator.cc" />
+    <ClCompile Include="..\table\block_based\partitioned_index_reader.cc" />
+    <ClCompile Include="..\table\block_based\reader_common.cc" />
+    <ClCompile Include="..\table\block_based\uncompression_dict_reader.cc" />
+    <ClCompile Include="..\table\block_fetcher.cc" />
+    <ClCompile Include="..\table\cuckoo\cuckoo_table_builder.cc" />
+    <ClCompile Include="..\table\cuckoo\cuckoo_table_factory.cc" />
+    <ClCompile Include="..\table\cuckoo\cuckoo_table_reader.cc" />
+    <ClCompile Include="..\table\format.cc">
+      <ObjectFileName>$(IntDir)/table/format.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\table\get_context.cc" />
+    <ClCompile Include="..\table\iterator.cc" />
+    <ClCompile Include="..\table\merging_iterator.cc" />
+    <ClCompile Include="..\table\meta_blocks.cc" />
+    <ClCompile Include="..\table\persistent_cache_helper.cc" />
+    <ClCompile Include="..\table\plain\plain_table_bloom.cc" />
+    <ClCompile Include="..\table\plain\plain_table_builder.cc" />
+    <ClCompile Include="..\table\plain\plain_table_factory.cc" />
+    <ClCompile Include="..\table\plain\plain_table_index.cc" />
+    <ClCompile Include="..\table\plain\plain_table_key_coding.cc" />
+    <ClCompile Include="..\table\plain\plain_table_reader.cc" />
+    <ClCompile Include="..\table\sst_file_reader.cc" />
+    <ClCompile Include="..\table\sst_file_writer.cc" />
+    <ClCompile Include="..\table\table_properties.cc" />
+    <ClCompile Include="..\table\two_level_iterator.cc" />
+    <ClCompile Include="..\test_util\sync_point.cc" />
+    <ClCompile Include="..\test_util\sync_point_impl.cc" />
+    <ClCompile Include="..\test_util\testutil.cc" />
+    <ClCompile Include="..\test_util\transaction_test_util.cc" />
+    <ClCompile Include="..\tools\block_cache_analyzer\block_cache_trace_analyzer.cc" />
+    <ClCompile Include="..\tools\dump\db_dump_tool.cc" />
+    <ClCompile Include="..\tools\ldb_cmd.cc" />
+    <ClCompile Include="..\tools\ldb_tool.cc" />
+    <ClCompile Include="..\tools\sst_dump_tool.cc" />
+    <ClCompile Include="..\tools\trace_analyzer_tool.cc" />
+    <ClCompile Include="..\trace_replay\trace_replay.cc" />
+    <ClCompile Include="..\trace_replay\block_cache_tracer.cc" />
+    <ClCompile Include="..\util\coding.cc" />
+    <ClCompile Include="..\util\compaction_job_stats_impl.cc" />
+    <ClCompile Include="..\util\comparator.cc" />
+    <ClCompile Include="..\util\compression_context_cache.cc" />
+    <ClCompile Include="..\util\concurrent_task_limiter_impl.cc" />
+    <ClCompile Include="..\util\crc32c.cc" />
+    <ClCompile Include="..\util\dynamic_bloom.cc" />
+    <ClCompile Include="..\util\hash.cc" />
+    <ClCompile Include="..\util\murmurhash.cc" />
+    <ClCompile Include="..\util\random.cc" />
+    <ClCompile Include="..\util\rate_limiter.cc" />
+    <ClCompile Include="..\util\slice.cc" />
+    <ClCompile Include="..\util\file_checksum_helper.cc" />
+    <ClCompile Include="..\util\status.cc" />
+    <ClCompile Include="..\util\string_util.cc" />
+    <ClCompile Include="..\util\thread_local.cc" />
+    <ClCompile Include="..\util\threadpool_imp.cc" />
+    <ClCompile Include="..\util\xxhash.cc" />
+    <ClCompile Include="..\utilities\backupable\backupable_db.cc" />
+    <ClCompile Include="..\utilities\blob_db\blob_compaction_filter.cc" />
+    <ClCompile Include="..\utilities\blob_db\blob_db.cc" />
+    <ClCompile Include="..\utilities\blob_db\blob_db_impl.cc" />
+    <ClCompile Include="..\utilities\blob_db\blob_db_impl_filesnapshot.cc" />
+    <ClCompile Include="..\utilities\blob_db\blob_dump_tool.cc" />
+    <ClCompile Include="..\utilities\blob_db\blob_file.cc" />
+    <ClCompile Include="..\utilities\blob_db\blob_log_reader.cc" />
+    <ClCompile Include="..\utilities\blob_db\blob_log_writer.cc" />
+    <ClCompile Include="..\utilities\blob_db\blob_log_format.cc" />
+    <ClCompile Include="..\utilities\cassandra\cassandra_compaction_filter.cc" />
+    <ClCompile Include="..\utilities\cassandra\format.cc">
+      <ObjectFileName>$(IntDir)/utilities/cassandra/format.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\utilities\cassandra\merge_operator.cc">
+      <ObjectFileName>$(IntDir)/utilities/cassandra/merge_operator.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\utilities\checkpoint\checkpoint_impl.cc" />
+    <ClCompile Include="..\utilities\compaction_filters\remove_emptyvalue_compactionfilter.cc" />
+    <ClCompile Include="..\utilities\debug.cc" />
+    <ClCompile Include="..\utilities\env_mirror.cc" />
+    <ClCompile Include="..\utilities\env_timed.cc" />
+    <ClCompile Include="..\utilities\leveldb_options\leveldb_options.cc" />
+    <ClCompile Include="..\utilities\memory\memory_util.cc" />
+    <ClCompile Include="..\utilities\merge_operators\bytesxor.cc" />
+    <ClCompile Include="..\utilities\merge_operators\max.cc" />
+    <ClCompile Include="..\utilities\merge_operators\put.cc" />
+    <ClCompile Include="..\utilities\merge_operators\sortlist.cc" />
+    <ClCompile Include="..\utilities\merge_operators\string_append\stringappend.cc" />
+    <ClCompile Include="..\utilities\merge_operators\string_append\stringappend2.cc" />
+    <ClCompile Include="..\utilities\merge_operators\uint64add.cc" />
+    <ClCompile Include="..\utilities\object_registry.cc" />
+    <ClCompile Include="..\utilities\option_change_migration\option_change_migration.cc" />
+    <ClCompile Include="..\utilities\options\options_util.cc" />
+    <ClCompile Include="..\utilities\persistent_cache\block_cache_tier.cc" />
+    <ClCompile Include="..\utilities\persistent_cache\block_cache_tier_file.cc" />
+    <ClCompile Include="..\utilities\persistent_cache\block_cache_tier_metadata.cc" />
+    <ClCompile Include="..\utilities\persistent_cache\persistent_cache_tier.cc" />
+    <ClCompile Include="..\utilities\persistent_cache\volatile_tier_impl.cc" />
+    <ClCompile Include="..\utilities\simulator_cache\cache_simulator.cc" />
+    <ClCompile Include="..\utilities\simulator_cache\sim_cache.cc" />
+    <ClCompile Include="..\utilities\table_properties_collectors\compact_on_deletion_collector.cc" />
+    <ClCompile Include="..\utilities\trace\file_trace_reader_writer.cc" />
+    <ClCompile Include="..\utilities\transactions\optimistic_transaction_db_impl.cc" />
+    <ClCompile Include="..\utilities\transactions\optimistic_transaction.cc" />
+    <ClCompile Include="..\utilities\transactions\pessimistic_transaction.cc" />
+    <ClCompile Include="..\utilities\transactions\pessimistic_transaction_db.cc" />
+    <ClCompile Include="..\utilities\transactions\snapshot_checker.cc" />
+    <ClCompile Include="..\utilities\transactions\transaction_base.cc" />
+    <ClCompile Include="..\utilities\transactions\transaction_db_mutex_impl.cc" />
+    <ClCompile Include="..\utilities\transactions\transaction_lock_mgr.cc" />
+    <ClCompile Include="..\utilities\transactions\transaction_util.cc" />
+    <ClCompile Include="..\utilities\transactions\write_prepared_txn.cc" />
+    <ClCompile Include="..\utilities\transactions\write_prepared_txn_db.cc" />
+    <ClCompile Include="..\utilities\transactions\write_unprepared_txn.cc" />
+    <ClCompile Include="..\utilities\transactions\write_unprepared_txn_db.cc" />
+    <ClCompile Include="..\utilities\ttl\db_ttl_impl.cc" />
+    <ClCompile Include="..\utilities\write_batch_with_index\write_batch_with_index.cc" />
+    <ClCompile Include="..\utilities\write_batch_with_index\write_batch_with_index_internal.cc" />
+    <Object Include=".\build_version.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\build_version.obj" />
+    <ClCompile Include="..\port\win\io_win.cc" />
+    <ClCompile Include="..\port\win\env_win.cc" />
+    <ClCompile Include="..\port\win\env_default.cc" />
+    <ClCompile Include="..\port\win\port_win.cc" />
+    <ClCompile Include="..\port\win\win_logger.cc" />
+    <ClCompile Include="..\port\win\win_thread.cc" />
+    <ClCompile Include="..\third-party\folly\folly\detail\Futex.cpp" />
+    <ClCompile Include="..\third-party\folly\folly\synchronization\AtomicNotification.cpp" />
+    <ClCompile Include="..\third-party\folly\folly\synchronization\DistributedMutex.cpp" />
+    <ClCompile Include="..\third-party\folly\folly\synchronization\ParkingLot.cpp" />
+    <ClCompile Include="..\third-party\folly\folly\synchronization\WaitOptions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include=".\build_version.vcxproj">
+      <Project>{FAC2580A-3819-3249-850F-EFC472901254}</Project>
+      <Name>build_version</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

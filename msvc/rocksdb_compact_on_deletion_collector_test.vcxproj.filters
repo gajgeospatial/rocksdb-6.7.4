@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\utilities\table_properties_collectors\compact_on_deletion_collector_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0F40B0DC-CED1-3CFB-BC09-480EB964D35C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

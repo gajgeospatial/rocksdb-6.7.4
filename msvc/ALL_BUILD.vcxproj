@@ -1,0 +1,1253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{98C0B4FF-8DDF-3C41-8D9E-E6599373A09E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;C:\Development\op3d_active\rocksdb-6.7.4;C:\Development\op3d_active\rocksdb-6.7.4\include;C:\Development\op3d_active\rocksdb-6.7.4\third-party\folly;C:\Development\op3d_active\rocksdb-6.7.4\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;C:\Development\op3d_active\rocksdb-6.7.4;C:\Development\op3d_active\rocksdb-6.7.4\include;C:\Development\op3d_active\rocksdb-6.7.4\third-party\folly;C:\Development\op3d_active\rocksdb-6.7.4\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;C:\Development\op3d_active\rocksdb-6.7.4;C:\Development\op3d_active\rocksdb-6.7.4\include;C:\Development\op3d_active\rocksdb-6.7.4\third-party\folly;C:\Development\op3d_active\rocksdb-6.7.4\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>\ZLIB.Library\build\native\inc\inc;C:\Development\op3d_active\rocksdb-6.7.4;C:\Development\op3d_active\rocksdb-6.7.4\include;C:\Development\op3d_active\rocksdb-6.7.4\third-party\folly;C:\Development\op3d_active\rocksdb-6.7.4\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\op3d_active\rocksdb-6.7.4\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Development/op3d_active/rocksdb-6.7.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/rocksdb-6.7.4 -BC:/Development/op3d_active/rocksdb-6.7.4/msvc --check-stamp-file C:/Development/op3d_active/rocksdb-6.7.4/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Development/op3d_active/rocksdb-6.7.4/CMakeLists.txt;C:\Development\op3d_active\rocksdb-6.7.4\CMakeLists.txt;C:\Development\op3d_active\rocksdb-6.7.4\cmake\modules\ReadVersion.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeASMCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\rocksdb-6.7.4\thirdparty.inc;C:\Development\op3d_active\rocksdb-6.7.4\util\build_version.cc.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Development\op3d_active\rocksdb-6.7.4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Development/op3d_active/rocksdb-6.7.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/rocksdb-6.7.4 -BC:/Development/op3d_active/rocksdb-6.7.4/msvc --check-stamp-file C:/Development/op3d_active/rocksdb-6.7.4/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Development/op3d_active/rocksdb-6.7.4/CMakeLists.txt;C:\Development\op3d_active\rocksdb-6.7.4\CMakeLists.txt;C:\Development\op3d_active\rocksdb-6.7.4\cmake\modules\ReadVersion.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeASMCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\rocksdb-6.7.4\thirdparty.inc;C:\Development\op3d_active\rocksdb-6.7.4\util\build_version.cc.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Development\op3d_active\rocksdb-6.7.4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Development/op3d_active/rocksdb-6.7.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/rocksdb-6.7.4 -BC:/Development/op3d_active/rocksdb-6.7.4/msvc --check-stamp-file C:/Development/op3d_active/rocksdb-6.7.4/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Development/op3d_active/rocksdb-6.7.4/CMakeLists.txt;C:\Development\op3d_active\rocksdb-6.7.4\CMakeLists.txt;C:\Development\op3d_active\rocksdb-6.7.4\cmake\modules\ReadVersion.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeASMCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\rocksdb-6.7.4\thirdparty.inc;C:\Development\op3d_active\rocksdb-6.7.4\util\build_version.cc.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Development\op3d_active\rocksdb-6.7.4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Development/op3d_active/rocksdb-6.7.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/rocksdb-6.7.4 -BC:/Development/op3d_active/rocksdb-6.7.4/msvc --check-stamp-file C:/Development/op3d_active/rocksdb-6.7.4/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Development/op3d_active/rocksdb-6.7.4/CMakeLists.txt;C:\Development\op3d_active\rocksdb-6.7.4\CMakeLists.txt;C:\Development\op3d_active\rocksdb-6.7.4\cmake\modules\ReadVersion.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeASMCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\rocksdb-6.7.4\thirdparty.inc;C:\Development\op3d_active\rocksdb-6.7.4\util\build_version.cc.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Development\op3d_active\rocksdb-6.7.4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Development\op3d_active\rocksdb-6.7.4\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\ZERO_CHECK.vcxproj">
+      <Project>{A488607B-CBE5-38DD-BAC9-6D38E57B86DD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\build_version.vcxproj">
+      <Project>{FAC2580A-3819-3249-850F-EFC472901254}</Project>
+      <Name>build_version</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\c_test.vcxproj">
+      <Project>{D610EEC3-DA6E-3777-8409-CDA12870C328}</Project>
+      <Name>c_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\cache_bench.vcxproj">
+      <Project>{F42B4D4B-B70B-31F3-8B3C-25887CA03E68}</Project>
+      <Name>cache_bench</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\db_bench.vcxproj">
+      <Project>{095EB2F8-AAD4-3617-91F7-D7B4A97DAD53}</Project>
+      <Name>db_bench</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\tools\db_repl_stress.vcxproj">
+      <Project>{C27C7E3A-DCA3-3753-99E3-3B52473D3C02}</Project>
+      <Name>db_repl_stress</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\tools\db_sanity_test.vcxproj">
+      <Project>{FCC1D454-81AA-3F5B-AC4B-1E6BD48FA036}</Project>
+      <Name>db_sanity_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\db_stress_tool\db_stress.vcxproj">
+      <Project>{B3F53C2E-3439-3E78-9544-91525F67E6AD}</Project>
+      <Name>db_stress</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\filter_bench.vcxproj">
+      <Project>{2BA6D7E5-8345-3B97-AD90-55AF536E138E}</Project>
+      <Name>filter_bench</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\third-party\gtest-1.8.1\fused-src\gtest\gtest.vcxproj">
+      <Project>{549DA26B-2E06-3F7F-9160-B0AE659A5260}</Project>
+      <Name>gtest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\hash_table_bench.vcxproj">
+      <Project>{74D0DD6F-BD13-3B27-9456-FA46437D47A2}</Project>
+      <Name>hash_table_bench</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\tools\ldb.vcxproj">
+      <Project>{156F4225-7264-3189-9360-E1F4E0C1A430}</Project>
+      <Name>ldb</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\memtablerep_bench.vcxproj">
+      <Project>{C90A2FD9-A839-395E-B153-75F265DD7638}</Project>
+      <Name>memtablerep_bench</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\range_del_aggregator_bench.vcxproj">
+      <Project>{F6D234EF-9C96-3A05-9442-B7D32968A33D}</Project>
+      <Name>range_del_aggregator_bench</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb.vcxproj">
+      <Project>{1E7A086F-C39A-34F2-8511-CFC41C45538C}</Project>
+      <Name>rocksdb</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb-shared.vcxproj">
+      <Project>{ADC8F352-7538-3546-8863-4FE1C78E3498}</Project>
+      <Name>rocksdb-shared</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_DistributedMutexTest.vcxproj">
+      <Project>{6F68EACB-86E6-3BD9-B894-8846E13D3304}</Project>
+      <Name>rocksdb_DistributedMutexTest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_arena_test.vcxproj">
+      <Project>{7F436EC1-8ABF-301E-8131-FDB3407457DC}</Project>
+      <Name>rocksdb_arena_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_auto_roll_logger_test.vcxproj">
+      <Project>{BBFD7139-3814-3FEE-899B-66757A85680C}</Project>
+      <Name>rocksdb_auto_roll_logger_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_autovector_test.vcxproj">
+      <Project>{FAC35B00-A1B8-3D81-9625-73376F806192}</Project>
+      <Name>rocksdb_autovector_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_backupable_db_test.vcxproj">
+      <Project>{65D15659-5B0D-3A61-A026-83C863756397}</Project>
+      <Name>rocksdb_backupable_db_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_blob_db_test.vcxproj">
+      <Project>{52F98920-B5DE-38CA-870A-624FC5C2EF8C}</Project>
+      <Name>rocksdb_blob_db_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_blob_file_addition_test.vcxproj">
+      <Project>{F3FF4397-843E-3555-9AD7-FCBFA3544296}</Project>
+      <Name>rocksdb_blob_file_addition_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_blob_file_garbage_test.vcxproj">
+      <Project>{051D3057-7C0E-3304-A42C-D4F1D4E92A2B}</Project>
+      <Name>rocksdb_blob_file_garbage_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_block_based_filter_block_test.vcxproj">
+      <Project>{78295B13-1BE7-30E6-9DE2-B5C82418A519}</Project>
+      <Name>rocksdb_block_based_filter_block_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_block_cache_trace_analyzer_test.vcxproj">
+      <Project>{7A697391-BEBB-3173-83F8-B79D7B5B4FF8}</Project>
+      <Name>rocksdb_block_cache_trace_analyzer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_block_test.vcxproj">
+      <Project>{0BB6D48B-327C-3927-915B-A42BDE2CA245}</Project>
+      <Name>rocksdb_block_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_bloom_test.vcxproj">
+      <Project>{12FCD408-9113-335A-ABF7-B654F57DE165}</Project>
+      <Name>rocksdb_bloom_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_cache_simulator_test.vcxproj">
+      <Project>{B1EE37DB-F1A7-355F-A7F5-351E8B3EDEA7}</Project>
+      <Name>rocksdb_cache_simulator_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_cache_test.vcxproj">
+      <Project>{C8EA8EDC-6AB6-38AC-8722-3B1F7AE912DC}</Project>
+      <Name>rocksdb_cache_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_cassandra_format_test.vcxproj">
+      <Project>{D6D18293-F9CB-3ADA-B4DA-8EB05BFA9D62}</Project>
+      <Name>rocksdb_cassandra_format_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_cassandra_functional_test.vcxproj">
+      <Project>{5D265B23-7CEA-3363-A29B-B745393AEB5D}</Project>
+      <Name>rocksdb_cassandra_functional_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_cassandra_row_merge_test.vcxproj">
+      <Project>{D0398715-59FC-3E98-B5BB-ED5B8BD24A6D}</Project>
+      <Name>rocksdb_cassandra_row_merge_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_cassandra_serialize_test.vcxproj">
+      <Project>{55B9304A-199D-3341-979D-3146C9BE4CA7}</Project>
+      <Name>rocksdb_cassandra_serialize_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_checkpoint_test.vcxproj">
+      <Project>{1A8BA6C9-9175-3C0F-82A5-DD9E4D4BB103}</Project>
+      <Name>rocksdb_checkpoint_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_cleanable_test.vcxproj">
+      <Project>{1AC789E4-E932-3883-A705-8123E43E123A}</Project>
+      <Name>rocksdb_cleanable_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_coding_test.vcxproj">
+      <Project>{49F25C4E-545F-31DD-A145-41490B436581}</Project>
+      <Name>rocksdb_coding_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_column_family_test.vcxproj">
+      <Project>{449367B4-0882-3ECC-B96B-33F65B4778EB}</Project>
+      <Name>rocksdb_column_family_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_compact_files_test.vcxproj">
+      <Project>{AB4D5A8F-492B-39F8-B96F-56A197BF347A}</Project>
+      <Name>rocksdb_compact_files_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_compact_on_deletion_collector_test.vcxproj">
+      <Project>{45CC46E6-A36A-3AAD-81BF-CE5C3E6AE525}</Project>
+      <Name>rocksdb_compact_on_deletion_collector_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_compaction_iterator_test.vcxproj">
+      <Project>{B33A0B6B-73BD-32B0-A6EC-BDE046BEBBF8}</Project>
+      <Name>rocksdb_compaction_iterator_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_compaction_job_stats_test.vcxproj">
+      <Project>{A21F2150-5B91-3CC1-A9CD-0039C867CF3C}</Project>
+      <Name>rocksdb_compaction_job_stats_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_compaction_job_test.vcxproj">
+      <Project>{7903D615-B5BF-39BC-8E2D-B3524D82DA5F}</Project>
+      <Name>rocksdb_compaction_job_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_compaction_picker_test.vcxproj">
+      <Project>{F4E90410-EBB4-3434-9708-60B82A7A1521}</Project>
+      <Name>rocksdb_compaction_picker_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_comparator_db_test.vcxproj">
+      <Project>{5C380AEC-2221-3C1E-941B-5D7322E7D4E0}</Project>
+      <Name>rocksdb_comparator_db_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_corruption_test.vcxproj">
+      <Project>{9773D8A8-1234-322D-855B-48C79DBBD65D}</Project>
+      <Name>rocksdb_corruption_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_crc32c_test.vcxproj">
+      <Project>{3C27A8E4-C144-37F8-BD4C-B6F969AA87AA}</Project>
+      <Name>rocksdb_crc32c_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_cuckoo_table_builder_test.vcxproj">
+      <Project>{B022D353-E484-32F4-AB87-71AC69DE5BCF}</Project>
+      <Name>rocksdb_cuckoo_table_builder_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_cuckoo_table_db_test.vcxproj">
+      <Project>{0854E4F1-586D-3748-8895-DAC6E16396C6}</Project>
+      <Name>rocksdb_cuckoo_table_db_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_cuckoo_table_reader_test.vcxproj">
+      <Project>{38D007F6-F551-326C-B74C-2D82E822520B}</Project>
+      <Name>rocksdb_cuckoo_table_reader_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_data_block_hash_index_test.vcxproj">
+      <Project>{C8D09770-B9B7-3E76-9D78-692D18E75115}</Project>
+      <Name>rocksdb_data_block_hash_index_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_basic_test.vcxproj">
+      <Project>{2756C06B-39E6-3DB9-AB46-DCD041B4850E}</Project>
+      <Name>rocksdb_db_basic_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_blob_index_test.vcxproj">
+      <Project>{4AC374CE-436B-379A-92C3-669D2A062815}</Project>
+      <Name>rocksdb_db_blob_index_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_block_cache_test.vcxproj">
+      <Project>{F6F170DD-BC62-3CCA-A23C-8AE23D9C5491}</Project>
+      <Name>rocksdb_db_block_cache_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_bloom_filter_test.vcxproj">
+      <Project>{C70CED3C-5345-3D08-B8AC-6625B443536F}</Project>
+      <Name>rocksdb_db_bloom_filter_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_compaction_filter_test.vcxproj">
+      <Project>{ACFF3FA3-AB8C-3A6A-9E9C-284FCEC5C840}</Project>
+      <Name>rocksdb_db_compaction_filter_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_compaction_test.vcxproj">
+      <Project>{4CF33BCA-8405-3E85-8C93-54DB22B63E8D}</Project>
+      <Name>rocksdb_db_compaction_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_dynamic_level_test.vcxproj">
+      <Project>{94752F16-BED7-3E03-B961-577814611DE2}</Project>
+      <Name>rocksdb_db_dynamic_level_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_flush_test.vcxproj">
+      <Project>{3630A337-E719-3AAB-AB33-831345D65C60}</Project>
+      <Name>rocksdb_db_flush_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_inplace_update_test.vcxproj">
+      <Project>{EDD01E2E-306B-3690-8702-E534CFC91826}</Project>
+      <Name>rocksdb_db_inplace_update_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_io_failure_test.vcxproj">
+      <Project>{BDA0C050-0B59-3EEA-9AD3-7C87F5DDA56C}</Project>
+      <Name>rocksdb_db_io_failure_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_iter_stress_test.vcxproj">
+      <Project>{34B524A2-79DC-3AB4-81B9-165A6A31B097}</Project>
+      <Name>rocksdb_db_iter_stress_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_iter_test.vcxproj">
+      <Project>{12984559-2F1D-373D-BA90-E412866A69DF}</Project>
+      <Name>rocksdb_db_iter_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_iterator_test.vcxproj">
+      <Project>{70B3ED2A-32D0-3C65-B935-DE53858FB2FE}</Project>
+      <Name>rocksdb_db_iterator_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_log_iter_test.vcxproj">
+      <Project>{413096DC-A230-3015-9072-A63405F5604D}</Project>
+      <Name>rocksdb_db_log_iter_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_logical_block_size_cache_test.vcxproj">
+      <Project>{9A9AE801-553E-34FB-8964-72F7331448C3}</Project>
+      <Name>rocksdb_db_logical_block_size_cache_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_memtable_test.vcxproj">
+      <Project>{957313F5-3CA9-3F05-8C46-34ED2E8FC042}</Project>
+      <Name>rocksdb_db_memtable_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_merge_operand_test.vcxproj">
+      <Project>{E3F0899B-0D85-312F-93C6-6AACDE81AD1E}</Project>
+      <Name>rocksdb_db_merge_operand_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_merge_operator_test.vcxproj">
+      <Project>{BCE8F3FB-6BD1-3BFA-9B7A-DFC52CC1F64C}</Project>
+      <Name>rocksdb_db_merge_operator_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_options_test.vcxproj">
+      <Project>{BD91C8DA-0B46-396E-A400-2B922694294F}</Project>
+      <Name>rocksdb_db_options_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_properties_test.vcxproj">
+      <Project>{97EEF2F1-91FD-357F-935A-C3A759D2CD84}</Project>
+      <Name>rocksdb_db_properties_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_range_del_test.vcxproj">
+      <Project>{5CF279A4-0910-38D6-93CF-41919E334978}</Project>
+      <Name>rocksdb_db_range_del_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_secondary_test.vcxproj">
+      <Project>{F3C9B7F8-5045-3AE8-9F59-6FF3BDAEB8DE}</Project>
+      <Name>rocksdb_db_secondary_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_sst_test.vcxproj">
+      <Project>{A0053E1D-1B1B-396E-AF7A-465899545105}</Project>
+      <Name>rocksdb_db_sst_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_statistics_test.vcxproj">
+      <Project>{102820F1-1754-318E-AA6E-E1192FA3B163}</Project>
+      <Name>rocksdb_db_statistics_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_table_properties_test.vcxproj">
+      <Project>{D16AC0A9-BA06-3B77-AA1F-9A2074D98294}</Project>
+      <Name>rocksdb_db_table_properties_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_tailing_iter_test.vcxproj">
+      <Project>{51EC3857-17CB-37C5-BBBB-8C2502220E5C}</Project>
+      <Name>rocksdb_db_tailing_iter_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_test.vcxproj">
+      <Project>{5E158457-E20B-3DC2-B22C-FF217A8B65D9}</Project>
+      <Name>rocksdb_db_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_test2.vcxproj">
+      <Project>{1598BE1D-2733-3156-8ACD-5C05A1B749CC}</Project>
+      <Name>rocksdb_db_test2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_universal_compaction_test.vcxproj">
+      <Project>{38AD6CA3-2062-3A26-AF4D-E7DD298E3B51}</Project>
+      <Name>rocksdb_db_universal_compaction_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_wal_test.vcxproj">
+      <Project>{23CFC2DD-0F16-3C68-89B7-C9402878CC94}</Project>
+      <Name>rocksdb_db_wal_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_with_timestamp_basic_test.vcxproj">
+      <Project>{63AC6883-0C2B-37B3-BD1D-14560FB48A48}</Project>
+      <Name>rocksdb_db_with_timestamp_basic_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_with_timestamp_compaction_test.vcxproj">
+      <Project>{B520A750-6F60-3C05-97CC-F057E5811FBA}</Project>
+      <Name>rocksdb_db_with_timestamp_compaction_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_db_write_test.vcxproj">
+      <Project>{BB630718-2508-362D-A6FE-59C2E9E4E53E}</Project>
+      <Name>rocksdb_db_write_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_dbformat_test.vcxproj">
+      <Project>{CFC3DDAF-FDC9-3F78-8A13-D374B1A73A4A}</Project>
+      <Name>rocksdb_dbformat_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_defer_test.vcxproj">
+      <Project>{044F5D39-20EF-3787-A1F8-6F38EFE116A4}</Project>
+      <Name>rocksdb_defer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_delete_scheduler_test.vcxproj">
+      <Project>{D94C5826-CB6C-399E-B8A9-9F3A8CFD6DFA}</Project>
+      <Name>rocksdb_delete_scheduler_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_deletefile_test.vcxproj">
+      <Project>{319A5731-C1D4-305D-BB16-F6CACBA5628F}</Project>
+      <Name>rocksdb_deletefile_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\tools\rocksdb_dump.vcxproj">
+      <Project>{935A5A0B-11F0-3E0D-942D-3FE57A1952C8}</Project>
+      <Name>rocksdb_dump</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_dynamic_bloom_test.vcxproj">
+      <Project>{4A162D30-308A-37EE-A1C1-D83CB0850F04}</Project>
+      <Name>rocksdb_dynamic_bloom_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_env_basic_test.vcxproj">
+      <Project>{123334D8-DE84-3CD1-BC05-7ADBE84CCE53}</Project>
+      <Name>rocksdb_env_basic_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_env_logger_test.vcxproj">
+      <Project>{170B275B-060A-32E9-892B-DB0D850B9000}</Project>
+      <Name>rocksdb_env_logger_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_env_test.vcxproj">
+      <Project>{64CDBE85-D839-3F7C-AB99-C3D625C3E0CB}</Project>
+      <Name>rocksdb_env_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_error_handler_fs_test.vcxproj">
+      <Project>{4D80FD14-70E4-34C7-AB59-0AA91E693AD4}</Project>
+      <Name>rocksdb_error_handler_fs_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_event_logger_test.vcxproj">
+      <Project>{F90FBEC9-00B0-388B-B8B5-4203123BD36D}</Project>
+      <Name>rocksdb_event_logger_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_external_sst_file_basic_test.vcxproj">
+      <Project>{3F4E2EDF-F355-37E6-9084-AB0725D0C85C}</Project>
+      <Name>rocksdb_external_sst_file_basic_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_external_sst_file_test.vcxproj">
+      <Project>{E072BBB2-8F45-324D-9EAE-0CA491459549}</Project>
+      <Name>rocksdb_external_sst_file_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_fault_injection_test.vcxproj">
+      <Project>{8AF433E0-168E-3FD8-BF49-5086A2503651}</Project>
+      <Name>rocksdb_fault_injection_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_file_indexer_test.vcxproj">
+      <Project>{8C66B3EE-67A1-3698-9ED0-2C105B72AB23}</Project>
+      <Name>rocksdb_file_indexer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_file_reader_writer_test.vcxproj">
+      <Project>{7C399735-4461-3CEC-8D0C-5E52A583B7B3}</Project>
+      <Name>rocksdb_file_reader_writer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_filelock_test.vcxproj">
+      <Project>{EBA69EBD-4E5D-3805-A21B-1CD06ED0DD06}</Project>
+      <Name>rocksdb_filelock_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_filename_test.vcxproj">
+      <Project>{4D473960-037B-3388-A9B9-2EE26A833AF7}</Project>
+      <Name>rocksdb_filename_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_flush_job_test.vcxproj">
+      <Project>{66A8FF8C-219F-3BF3-A5B8-0D964A239D11}</Project>
+      <Name>rocksdb_flush_job_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_full_filter_block_test.vcxproj">
+      <Project>{561816BC-1CA9-3113-B112-2C70E68F4501}</Project>
+      <Name>rocksdb_full_filter_block_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_hash_table_test.vcxproj">
+      <Project>{10170A96-4DCB-388F-9515-CEFDFA601F4A}</Project>
+      <Name>rocksdb_hash_table_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_hash_test.vcxproj">
+      <Project>{CF4389CF-782F-30BA-AEC7-03F8794313D1}</Project>
+      <Name>rocksdb_hash_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_heap_test.vcxproj">
+      <Project>{7438D859-597A-3B6C-AA18-5A8066F30700}</Project>
+      <Name>rocksdb_heap_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_histogram_test.vcxproj">
+      <Project>{15C75BFC-8D8B-37F8-942A-7A528191129F}</Project>
+      <Name>rocksdb_histogram_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_inlineskiplist_test.vcxproj">
+      <Project>{7F15F5EB-C0A1-34E7-9CAA-0CD6CDC52ED6}</Project>
+      <Name>rocksdb_inlineskiplist_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_io_posix_test.vcxproj">
+      <Project>{DFAF0391-66E8-317A-B1BF-5FCF04621924}</Project>
+      <Name>rocksdb_io_posix_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_iostats_context_test.vcxproj">
+      <Project>{77C0C252-A1D4-3FD9-8123-413A2E369DD6}</Project>
+      <Name>rocksdb_iostats_context_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_ldb_cmd_test.vcxproj">
+      <Project>{6CA4689A-9DE4-33CE-A9A7-B991344FBC47}</Project>
+      <Name>rocksdb_ldb_cmd_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_listener_test.vcxproj">
+      <Project>{95288854-F018-3D3C-996C-8618280ECD69}</Project>
+      <Name>rocksdb_listener_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_log_test.vcxproj">
+      <Project>{CAC2892D-9B57-3807-BDF0-5100FD4512EE}</Project>
+      <Name>rocksdb_log_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_lru_cache_test.vcxproj">
+      <Project>{B2DD64A2-B027-33FD-80C5-A06D0DEF5F03}</Project>
+      <Name>rocksdb_lru_cache_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_manual_compaction_test.vcxproj">
+      <Project>{0237B2D9-4D51-310E-93CA-BE41236D78A0}</Project>
+      <Name>rocksdb_manual_compaction_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_memkind_kmem_allocator_test.vcxproj">
+      <Project>{8F48583E-DB2F-3533-BED6-D85F82C933B3}</Project>
+      <Name>rocksdb_memkind_kmem_allocator_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_memory_test.vcxproj">
+      <Project>{1B6596A8-0F6E-30B1-AB2F-7AA68576D80C}</Project>
+      <Name>rocksdb_memory_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_memtable_list_test.vcxproj">
+      <Project>{EECD1142-63AD-3DE3-84CE-F178BCA54401}</Project>
+      <Name>rocksdb_memtable_list_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_merge_helper_test.vcxproj">
+      <Project>{486636A1-DAC4-30DB-9D21-8DF2B1DD1F8E}</Project>
+      <Name>rocksdb_merge_helper_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_merge_test.vcxproj">
+      <Project>{D3ECC8DC-5512-38A3-B43E-0C8FD231237A}</Project>
+      <Name>rocksdb_merge_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_merger_test.vcxproj">
+      <Project>{4CD76500-773E-3E28-8112-0C003E939E0A}</Project>
+      <Name>rocksdb_merger_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_mock_env_test.vcxproj">
+      <Project>{852ABD3D-CC14-3333-BB34-5C12C0B69CAF}</Project>
+      <Name>rocksdb_mock_env_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_object_registry_test.vcxproj">
+      <Project>{9DEB22F4-2F5C-3567-BD3C-3C9454CB01B6}</Project>
+      <Name>rocksdb_object_registry_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_obsolete_files_test.vcxproj">
+      <Project>{3A5CBCC5-1E23-38E3-B116-B6E570871478}</Project>
+      <Name>rocksdb_obsolete_files_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_optimistic_transaction_test.vcxproj">
+      <Project>{7466C607-0A0F-3AE2-A3BA-A3423C1F1917}</Project>
+      <Name>rocksdb_optimistic_transaction_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_option_change_migration_test.vcxproj">
+      <Project>{B8B65FDD-8BA5-3A51-858E-AAE68E8A69A0}</Project>
+      <Name>rocksdb_option_change_migration_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_options_file_test.vcxproj">
+      <Project>{E9516BD1-DB2B-39F5-9A05-81722D119565}</Project>
+      <Name>rocksdb_options_file_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_options_settable_test.vcxproj">
+      <Project>{3A14C696-ADFD-37FA-9AFD-E25E339F0304}</Project>
+      <Name>rocksdb_options_settable_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_options_test.vcxproj">
+      <Project>{39366BD5-3960-3ADA-821A-4CEAE7A4D6BA}</Project>
+      <Name>rocksdb_options_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_options_util_test.vcxproj">
+      <Project>{CB7AB94A-AD50-3654-9C02-8ABBF90919B9}</Project>
+      <Name>rocksdb_options_util_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_partitioned_filter_block_test.vcxproj">
+      <Project>{9305B2EE-E950-3CDF-8E40-66983D1D67C3}</Project>
+      <Name>rocksdb_partitioned_filter_block_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_perf_context_test.vcxproj">
+      <Project>{5762307C-AB3B-38E4-AA63-B72866CBDDE1}</Project>
+      <Name>rocksdb_perf_context_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_persistent_cache_test.vcxproj">
+      <Project>{5314BE17-0BA4-3BA2-8098-D32DC9C91FDE}</Project>
+      <Name>rocksdb_persistent_cache_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_plain_table_db_test.vcxproj">
+      <Project>{FD1A5F7C-C305-3C8F-B1B5-61B22C1216A0}</Project>
+      <Name>rocksdb_plain_table_db_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_prefix_test.vcxproj">
+      <Project>{0A80F29B-E7CD-302E-A5AC-07AA2BF7D7C8}</Project>
+      <Name>rocksdb_prefix_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_random_access_file_reader_test.vcxproj">
+      <Project>{EBC03102-5B62-3A27-86B0-EC719B8F9645}</Project>
+      <Name>rocksdb_random_access_file_reader_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_random_test.vcxproj">
+      <Project>{85CDB590-C385-3122-A9E5-3A709976C902}</Project>
+      <Name>rocksdb_random_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_range_del_aggregator_test.vcxproj">
+      <Project>{C0ADC481-763F-3250-8B0F-41BA799A4B9B}</Project>
+      <Name>rocksdb_range_del_aggregator_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_range_tombstone_fragmenter_test.vcxproj">
+      <Project>{0F6432D2-5B08-3E85-B604-2ED48C96AE09}</Project>
+      <Name>rocksdb_range_tombstone_fragmenter_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_rate_limiter_test.vcxproj">
+      <Project>{1243C962-C150-34FF-98F4-321F419E6772}</Project>
+      <Name>rocksdb_rate_limiter_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_reduce_levels_test.vcxproj">
+      <Project>{68DDF563-5686-350E-B8AA-5FE5969135E6}</Project>
+      <Name>rocksdb_reduce_levels_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_repair_test.vcxproj">
+      <Project>{A9387B1E-7019-32AB-9E64-7562456EC0AC}</Project>
+      <Name>rocksdb_repair_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_repeatable_thread_test.vcxproj">
+      <Project>{EB942AA9-9441-3A45-91E4-68A4994F8735}</Project>
+      <Name>rocksdb_repeatable_thread_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_sim_cache_test.vcxproj">
+      <Project>{3BEEB732-D45E-30EE-9CDB-274C02AB0E4E}</Project>
+      <Name>rocksdb_sim_cache_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_skiplist_test.vcxproj">
+      <Project>{40DD04BB-6BC3-3862-97E2-89E516478B1E}</Project>
+      <Name>rocksdb_skiplist_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_slice_test.vcxproj">
+      <Project>{03A1A93F-3008-311B-9313-40A23B502DCF}</Project>
+      <Name>rocksdb_slice_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_slice_transform_test.vcxproj">
+      <Project>{46BECAA7-9987-3C15-B29F-AF1150A065C0}</Project>
+      <Name>rocksdb_slice_transform_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_sst_dump_test.vcxproj">
+      <Project>{A6AABBA3-4289-39D4-99AE-AF3B97857E7C}</Project>
+      <Name>rocksdb_sst_dump_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_sst_file_reader_test.vcxproj">
+      <Project>{A51A01C1-FEE5-3CB8-9E47-8EA27D242B63}</Project>
+      <Name>rocksdb_sst_file_reader_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_statistics_test.vcxproj">
+      <Project>{FE496FC9-F8D1-36EF-8AEE-7B008D4DA4D7}</Project>
+      <Name>rocksdb_statistics_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_stats_history_test.vcxproj">
+      <Project>{4BC6C4DF-A099-3CFE-8B63-F7FE170E5907}</Project>
+      <Name>rocksdb_stats_history_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_stringappend_test.vcxproj">
+      <Project>{8C406868-2BC8-3DAC-98FE-5FE4D09BEFB4}</Project>
+      <Name>rocksdb_stringappend_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_table_properties_collector_test.vcxproj">
+      <Project>{28B1F9C5-7313-3B07-AF58-62DAE97C2506}</Project>
+      <Name>rocksdb_table_properties_collector_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_table_test.vcxproj">
+      <Project>{14831FF3-5280-3F44-B787-DBA412F77509}</Project>
+      <Name>rocksdb_table_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_thread_list_test.vcxproj">
+      <Project>{03655A40-7165-3F08-8BE1-32D05DD4E5AC}</Project>
+      <Name>rocksdb_thread_list_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_thread_local_test.vcxproj">
+      <Project>{1A89FCEE-C806-3B80-AD25-6735DA240DC1}</Project>
+      <Name>rocksdb_thread_local_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_timer_queue_test.vcxproj">
+      <Project>{22C01744-500F-3059-B002-B4A983B7C0E7}</Project>
+      <Name>rocksdb_timer_queue_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_timer_test.vcxproj">
+      <Project>{55897718-28A8-33D9-91CD-ED1E4DD018E3}</Project>
+      <Name>rocksdb_timer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_trace_analyzer_test.vcxproj">
+      <Project>{256F128F-A01F-344B-B80F-B19D1C04D1BD}</Project>
+      <Name>rocksdb_trace_analyzer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_transaction_lock_mgr_test.vcxproj">
+      <Project>{733C8A29-DE4A-3DEA-913E-46C09D25DF54}</Project>
+      <Name>rocksdb_transaction_lock_mgr_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_transaction_test.vcxproj">
+      <Project>{9DCD88CB-16D6-3171-B30E-5C758A043FB7}</Project>
+      <Name>rocksdb_transaction_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_ttl_test.vcxproj">
+      <Project>{C8F7EC49-0859-3D31-AB08-4B08FA87601B}</Project>
+      <Name>rocksdb_ttl_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\tools\rocksdb_undump.vcxproj">
+      <Project>{56940AD4-ABDA-30CA-A9B3-526EDE7CCC45}</Project>
+      <Name>rocksdb_undump</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_version_builder_test.vcxproj">
+      <Project>{5D16BCEA-792F-335E-96A5-66E96EDC4372}</Project>
+      <Name>rocksdb_version_builder_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_version_edit_test.vcxproj">
+      <Project>{7E506393-37CA-366B-9992-50B9AA66435A}</Project>
+      <Name>rocksdb_version_edit_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_version_set_test.vcxproj">
+      <Project>{336BD3C2-AA2C-3961-8D2D-8A38FCFA5A52}</Project>
+      <Name>rocksdb_version_set_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_wal_manager_test.vcxproj">
+      <Project>{034AA503-24D5-3B84-B6F6-D8224D5BA1CC}</Project>
+      <Name>rocksdb_wal_manager_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_work_queue_test.vcxproj">
+      <Project>{88080B9E-E51D-3198-A0C2-C3E03976C5F7}</Project>
+      <Name>rocksdb_work_queue_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_write_batch_test.vcxproj">
+      <Project>{BD044C9D-93B6-3B57-88C8-FB210CEA21B2}</Project>
+      <Name>rocksdb_write_batch_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_write_batch_with_index_test.vcxproj">
+      <Project>{572F1FAD-8AA3-3FF7-B4DA-7646CF2056BE}</Project>
+      <Name>rocksdb_write_batch_with_index_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_write_buffer_manager_test.vcxproj">
+      <Project>{B3D56A09-B31D-3939-A90E-B847B9D1E645}</Project>
+      <Name>rocksdb_write_buffer_manager_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_write_callback_test.vcxproj">
+      <Project>{3D1D546E-0A18-3717-B9FA-E7CFA971BBAC}</Project>
+      <Name>rocksdb_write_callback_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_write_controller_test.vcxproj">
+      <Project>{413C0E51-587F-33FF-A150-E7BEA9623BA0}</Project>
+      <Name>rocksdb_write_controller_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_write_prepared_transaction_test.vcxproj">
+      <Project>{CDB05852-DA6E-32ED-AB65-BB47EA4D50E7}</Project>
+      <Name>rocksdb_write_prepared_transaction_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\rocksdb_write_unprepared_transaction_test.vcxproj">
+      <Project>{E5286B2F-5ECF-3EEE-AE9E-1CF5EC1620AB}</Project>
+      <Name>rocksdb_write_unprepared_transaction_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\tools\sst_dump.vcxproj">
+      <Project>{5DF45FD7-B848-34A9-8060-97117B6ABF1D}</Project>
+      <Name>sst_dump</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\table_reader_bench.vcxproj">
+      <Project>{7D50C42C-5D74-3EA8-8A14-76592A0CDE4E}</Project>
+      <Name>table_reader_bench</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\testharness.vcxproj">
+      <Project>{6B56EB5F-291D-31A6-A20F-95207B6188B1}</Project>
+      <Name>testharness</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\testutillib.vcxproj">
+      <Project>{F7861EF1-92A6-31D7-A469-C58271EB6C1B}</Project>
+      <Name>testutillib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\rocksdb-6.7.4\msvc\tools\write_stress.vcxproj">
+      <Project>{FB32A5C4-AFA1-31B1-AFB4-A8A912F745D9}</Project>
+      <Name>write_stress</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
